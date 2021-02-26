@@ -15,7 +15,7 @@ def remove_unicode(item):
     return item
 
 
-pathlist = Path("../cleaned data").rglob("*.json")
+pathlist = Path("../data/cleaned data").rglob("*.json")
 for path in pathlist:
     path_in_str = str(path)
 

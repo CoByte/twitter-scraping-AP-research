@@ -1,4 +1,5 @@
 cleaned data/
-raw data/
+data/raw data/
 venv/
 .idea/
+training data/

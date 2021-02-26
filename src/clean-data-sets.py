@@ -11,7 +11,7 @@ for file in files:
 
     print("Currently processing {}...".format(file))
 
-    file = "../raw data/" + file
+    file = "../data/raw data/" + file
 
     num_lines = sum(1 for line in open(file, encoding="utf-8"))
 
@@ -38,5 +38,5 @@ for file in files:
 cleanedData = json.dumps(data)
 cleanedData = cleanedData.replace("},", "},\n")
 
-with open("../cleaned data/" + target, "w+") as outfile:
+with open("../data/cleaned data/" + target, "w+") as outfile:
     outfile.write(cleanedData)
